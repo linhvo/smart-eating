@@ -28,3 +28,6 @@ rerun.txt
 pickle-email-*.html
 
 /.idea
+
+# Ignore application configuration
+/config/application.yml
