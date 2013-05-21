@@ -1,3 +1,3 @@
 class FoodGroup < ActiveRecord::Base
- attr_accessible :name, :utl
+  attr_accessible :name
 end

@@ -11,11 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130501215930) do
+ActiveRecord::Schema.define(:version => 20130520162146) do
+
+  create_table "basic_foods", :force => true do |t|
+    t.string   "name"
+    t.string   "fatsecret_url"
+    t.integer  "fatsecret_id"
+    t.float    "calories"
+    t.float    "fat"
+    t.float    "protein"
+    t.float    "carb"
+    t.float    "amount"
+    t.string   "unit"
+    t.string   "brand_name"
+    t.integer  "group_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "food_groups", :force => true do |t|
     t.string   "name"
-    t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
