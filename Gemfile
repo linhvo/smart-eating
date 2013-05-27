@@ -29,6 +29,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'ember-rails'
+
 gem 'rest-client'
 
 gem 'nokogiri'
