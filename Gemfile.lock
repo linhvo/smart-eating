@@ -78,6 +78,8 @@ GEM
     nokogiri (1.5.9)
     pg (0.15.1)
     polyglot (0.3.3)
+    rabl (0.8.5)
+      activesupport (>= 2.3.14)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -137,6 +139,7 @@ DEPENDENCIES
   jquery-rails
   nokogiri
   pg (~> 0.15.1)
+  rabl
   rails (= 3.2.13)
   rest-client
   sass-rails (~> 3.2.3)
