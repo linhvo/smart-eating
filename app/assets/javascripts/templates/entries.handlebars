@@ -1,9 +1,7 @@
-
-{{view Ember.TextField valueBinding="food" action="addFood" placeholder="Food Name"}}
-{{view Ember.TextField valueBinding="quantity" action="addFood" placeholder="Quantity"}}
-{{view Ember.Select contentBinding="unit" valueBinding="unit[0]"}}
+{{view SmartEating.NewEntryView}}
 <ul>
-    {{#each entries}}
+    {{#each controller}}
         <li>{{name}}: {{quantity}}</li>
     {{/each}}
 </ul>
+<button {{                                                                                                                                                                                                                                                    action calculateNutrition}}> Calculate </button>

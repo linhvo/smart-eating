@@ -30,6 +30,7 @@ end
 gem 'jquery-rails'
 
 gem 'ember-rails'
+gem 'ember-rest-rails'
 
 gem 'rest-client'
 

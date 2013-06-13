@@ -4,3 +4,10 @@ SmartEating.Router.map(function() {
     });
 });
 
+SmartEating.EntriesRoute = Ember.Route.extend({
+    model: function() {
+        return SmartEating.Entry;
+    }
+});
+
+

@@ -1,17 +1,18 @@
-SmartEating.EntriesController = Ember.Controller.extend
+SmartEating.EntriesController = Ember.ArrayController.extend
 ({
-    entries: [],
-    unit: ["gram", "cup"],
     addFood: function () {
         if (this.get('food') && this.get('quantity')) {
-            this.entries.pushObject({
+            this.pushObject(Ember.Object.create({
                 name: this.get('food'),
-                quantity: this.get('quantity')
-            });
+                quantity: this.get('quantity'),
+                unit: SmartEating.UnitController.get('unit')
+            })
+            );
             return this.set('food', ""),
                 this.set('quantity', "");
-        } else{
+        } else {
             alert("Fill in food or quantity")
         }
     }
 });
+

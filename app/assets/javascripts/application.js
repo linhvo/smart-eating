@@ -15,6 +15,7 @@
 //= require handlebars
 //= require ember
 //= require ember-data
+//= require ./vendor/ember-rest
 //= require_self
 //= require smart_eating
 SmartEating = Ember.Application.create();
