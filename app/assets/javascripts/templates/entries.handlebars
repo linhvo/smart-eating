@@ -1,0 +1,7 @@
+{{view SmartEating.NewEntryView}}
+<ul>
+    {{#each controller}}
+        <li>{{name}}: {{quantity}}</li>
+    {{/each}}
+</ul>
+<button {{                                                                                                                                                                                                                                                    action calculateNutrition}}> Calculate </button>

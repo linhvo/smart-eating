@@ -44,38 +44,6 @@ def get_fatsecret_food(food)
           unit = get_unit[get_unit.length - 1]
         end
 
-        #if per_unit.include?("cup")
-        #  unit = "cup"
-        #elsif per_unit.include?("g")
-        #  unit = "g"
-        #elsif per_unit.include?("serving")
-        #  unit = "serving"
-        #elsif per_unit.include?("slice")
-        #  unit = "slice"
-        #elsif per_unit.include?("tbsp")
-        #  unit = "tbsp"
-        #elsif per_unit.include?("chip")
-        #  unit = "chip"
-        #elsif per_unit.include?("cookie")
-        #  unit = "cookie"
-        #elsif per_unit.include?("oz")
-        #  if per_unit.include?("fl")
-        #    unit = "fl_oz"
-        #  else
-        #    unit = "oz"
-        #  end
-        #elsif per_unit.include?("container")
-        #  unit = "container"
-        #elsif per_unit.include?("bottle")
-        #  unit = "bottle"
-        #elsif per_unit.include?("pint")
-        #  unit = "pint"
-        #else
-        #  unit = "else"
-        #end
-
-
-
         if per_unit.include? "/"
           amount = per_unit.split("/")[0].scan(/\d/).join("").to_f / per_unit.split("/")[1].scan(/\d./).join("").to_i
         else

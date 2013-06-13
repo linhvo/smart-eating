@@ -29,9 +29,14 @@ end
 
 gem 'jquery-rails'
 
+gem 'ember-rails'
+gem 'ember-rest-rails'
+
 gem 'rest-client'
 
 gem 'nokogiri'
+
+gem 'rabl'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

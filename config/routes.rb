@@ -1,4 +1,10 @@
 SmartEating::Application.routes.draw do
+  root to: 'application#index'
+
+  namespace :api do
+    resources :units, only: [:show, :index] do
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
